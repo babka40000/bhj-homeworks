@@ -9,4 +9,7 @@ const modalSuccess = document.getElementById('modal_success');
 const showSuccess = document.getElementsByClassName('show-success');
 
 elems = Array.from(showSuccess);
-elems.forEach(elem => {elem.onclick = () => {modalSuccess.classList.add('modal_active')}});
+elems.forEach(elem => {elem.onclick = () => {
+    modalMain.classList.remove('modal_active');
+    modalSuccess.classList.add('modal_active')
+}});
