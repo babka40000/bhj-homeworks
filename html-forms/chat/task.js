@@ -30,7 +30,9 @@ chatWidgetInput.addEventListener('keydown', (element) => {
                     <div class="message__text">
                     ` + answer + `    
                     </div>
-                </div>`;  
+                </div>`; 
+                
+            chatWidgetInput.value = '';
         }
     } 
 })
